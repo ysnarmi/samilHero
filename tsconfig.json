@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "typeRoots": ["./node_modules/@types", "./@types"],
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@apis/*": ["src/apis/*"],
+      "@apis": ["src/apis"],
+      "@assets/*": ["src/assets/*"],
+      "@assets": ["src/assets"],
+      "@constants": ["src/features/common/constants"],
+      "@constants/*": ["src/features/common/constants/*"],
+      "@features": ["src/features"],
+      "@features/*": ["src/features/*"],
+      "@utils/*": ["src/utils/*"],
+      "@utils": ["src/utils"],
+      "@icons": ["src/assets/icons"],
+      "@icons/*": ["src/assets/icons/*"]
+    },
+    "incremental": true
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "custom.d.ts", "next-i18next.config.js"],
+  "exclude": ["node_modules"]
+}
